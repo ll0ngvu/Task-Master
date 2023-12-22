@@ -1,0 +1,23 @@
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inputBox {
+    border: none;
+    background-color: #F3F3F3;
+    width: 50em;
+    height: 4em;
+    border-radius: 5px;
+    padding-left: 1em;
+    outline: none;
+  }
+  
+  .inputBox::placeholder {
+    font-style: italic;
+  }
+  
+  .inputBox::selection {
+    background: lightgray;
+  }
