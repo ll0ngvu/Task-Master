@@ -6,16 +6,18 @@
   
   .inputBox {
     border: none;
-    background-color: #F3F3F3;
+    background-color: var(--input-box-color);
     width: 50em;
     height: 4em;
     border-radius: 5px;
     padding-left: 1em;
     outline: none;
+    color: var(--input-box-text-color);
   }
   
   .inputBox::placeholder {
     font-style: italic;
+    color: var(--input-placeholder-color);
   }
   
   .inputBox::selection {

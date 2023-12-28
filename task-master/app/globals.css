@@ -1,0 +1,24 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --input-box-color: #f3f3f3;
+    --input-box-text-color: #000000;
+    --input-placeholder-color: #999999;
+    --toggle-background-color: #000000;
+    --toggle-foreground-color: #ffffff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+[data-theme="dark"] {
+    --background-color: #151321;
+    --text-color: #e6e6e6;
+    --input-box-color: #292541;
+    --input-box-text-color: #f2f2f2;
+    --input-placeholder-color: #999999;
+    --toggle-background-color: #ffffff;
+    --toggle-foreground-color: #000000;
+}
