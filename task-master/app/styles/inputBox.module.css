@@ -13,6 +13,7 @@
     padding-left: 1em;
     outline: none;
     color: var(--input-box-text-color);
+    transition: background-color 250ms ease-in-out;
   }
   
   .inputBox::placeholder {
