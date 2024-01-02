@@ -12,8 +12,6 @@ import useLocalStorage from '@/app/hooks/useLocalStorage';
 
 export default function Home() {
 
-  // const [isDark, setIsDark] = useLocalStorage('isDark', false);
-
   const [isDark, setIsDark] = useLocalStorage('isDark', false);
   const [hasMounted, setHasMounted] = useState(false);
 
