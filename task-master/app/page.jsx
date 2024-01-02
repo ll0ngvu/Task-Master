@@ -8,19 +8,25 @@ import InputBox from '@/app/components/inputBox'
 import Toggle from '@/app/components/toggle'
 import { be_vietnam_pro } from '@/app/fonts'
 import React, { useState, useEffect } from 'react';
-import useLocalStorage from 'use-local-storage';
+import useLocalStorage from '@/app/hooks/useLocalStorage';
 
 export default function Home() {
 
-  const preference = window.matchMedia('(prefers-color-scheme: dark)').matches; 
-  const [isDark, setIsDark] = useLocalStorage("isDark", preference);
+  // const [isDark, setIsDark] = useLocalStorage('isDark', false);
+
+  const [isDark, setIsDark] = useLocalStorage('isDark', false);
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <div className={styles.Home} data-theme={isDark ? 'dark' : 'light'}>
-
-      <Head>
-        <link rel='icon' href='./logo.png'/>
-      </Head>
 
       <Toggle 
         isChecked={isDark}
