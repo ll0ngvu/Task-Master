@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
   }
   
   .inputBox {
@@ -20,7 +21,7 @@
     font-style: italic;
     color: var(--input-placeholder-color);
   }
-  
+
   .inputBox::selection {
     background: lightgray;
   }

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import Head from 'next/head'
 import InputBox from '@/app/components/inputBox'
-// import TaskItem from '@/app/components/TaskItem'
+import TaskItem from '@/app/components/taskItem'
 import Toggle from '@/app/components/toggle'
 import { be_vietnam_pro } from '@/app/fonts'
 import React, { useState, useEffect } from 'react';
@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
       <InputBox />
-      {/* <TaskItem /> */}
+      <TaskItem />
     </div>
   )
 }
