@@ -3,9 +3,14 @@
     --text-color: #000000;
     --input-box-color: #f3f3f3;
     --input-box-text-color: #000000;
-    --input-placeholder-color: #808080;
+    --input-placeholder-color: #595959;
     --toggle-background-color: #000000;
     --toggle-foreground-color: #ffffff;
+    --tasksBox-color: #f3f3f3;
+    --taskBox-text-color: #000000;
+    --checkBox-color: #000000;
+    --checkBox-border-color: #000000;
+    --remove-icon: url("/close-black.png")
 }
 
 body {
@@ -14,11 +19,16 @@ body {
 }
 
 [data-theme="dark"] {
-    --background-color: #151321;
+    --background-color: #010409;
     --text-color: #fffafa;
-    --input-box-color: #292541;
+    --input-box-color: #0C1017;
     --input-box-text-color: #f2f2f2;
     --input-placeholder-color: #bfbfbf;
     --toggle-background-color: #fffafa;
     --toggle-foreground-color: #000000;
+    --tasksBox-color: #0C1017;
+    --taskBox-text-color: #fffafa;
+    --checkBox-color: #ffffff;
+    --checkBox-border-color: #ffffff;
+    --remove-icon: url("/close-white.png")
 }

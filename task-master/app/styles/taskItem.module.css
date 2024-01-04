@@ -1,0 +1,74 @@
+.tasksContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.tasksBox {
+    width: 42.5em;
+    height: 10em;
+    background-color: var(--tasksBox-color);
+    margin-top: 2em;
+    border-radius: 5px;
+    display: flex;
+    color: var(--taskBox-text-color);
+    transition: background-color 250ms ease-in-out;
+}
+
+.taskItem {
+    display: flex;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em; /* Ensure there's space on the right */
+    width: 100%; /* Ensure taskItem takes full width of its container */
+}
+
+.taskItem input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid var(--checkBox-border-color);
+    border-radius: 0.15em;
+    transform: translateY(0.3em);
+    display: grid;
+    place-content: center;
+}
+
+.taskItem input::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--checkBox-color);
+}
+
+.taskItem input:checked::before {
+    transform: scale(1);
+}
+
+.taskItem label {
+    margin-top: 0.4em;
+    margin-left: 0.3em;
+    font-size: 0.9rem;
+    flex-grow: 1; /* Allows the label to take up available space */
+}
+
+.taskRemove {
+    background-image: var(--remove-icon); /* Ensure this variable is defined with the correct icon path */
+    background-color: transparent; /* Remove any default background color */
+    background-size: contain; /* Adjust as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 24px; /* Set a specific width */
+    height: 24px; /* Set a specific height */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Changes cursor on hover */
+    padding: 0; /* Remove any default padding */
+    outline: none; /* Remove focus outline */
+    background-size: 12px 12px; /* Adjust this to fit your desired size */
+    margin-top: 0.2em;
+    margin-left: auto; /* This pushes the button to the far right */
+    transition: background-color 250ms ease-in-out;
+}
