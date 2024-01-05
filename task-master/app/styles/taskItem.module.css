@@ -1,25 +1,11 @@
-.tasksContainer {
-    display: flex;
-    justify-content: center;
-}
-
-.tasksBox {
-    width: 42.5em;
-    height: 10em;
-    background-color: var(--tasksBox-color);
-    margin-top: 2em;
-    border-radius: 5px;
-    display: flex;
-    color: var(--taskBox-text-color);
-    transition: background-color 250ms ease-in-out;
-}
-
 .taskItem {
     display: flex;
+    align-items: center;
     margin-top: 1em;
     margin-left: 1em;
-    margin-right: 1em; /* Ensure there's space on the right */
     width: 100%; /* Ensure taskItem takes full width of its container */
+    height: 2em;
+    justify-content: flex-start;
 }
 
 .taskItem input {
@@ -33,6 +19,10 @@
     transform: translateY(0.3em);
     display: grid;
     place-content: center;
+
+    flex-shrink: 0; /* Prevents shrinking */
+    margin-right: 10px; /* Space between checkbox and label */
+
 }
 
 .taskItem input::before {
@@ -48,11 +38,20 @@
     transform: scale(1);
 }
 
+.strikeThrough {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
 .taskItem label {
     margin-top: 0.4em;
     margin-left: 0.3em;
     font-size: 0.9rem;
     flex-grow: 1; /* Allows the label to take up available space */
+    transition: opacity 0.5s ease;
+    white-space: normal; /* Allow text to wrap */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    word-wrap: break-word; /* Break long words to prevent overflow */
 }
 
 .taskRemove {
@@ -65,10 +64,18 @@
     height: 24px; /* Set a specific height */
     border: none; /* Remove default button border */
     cursor: pointer; /* Changes cursor on hover */
-    padding: 0; /* Remove any default padding */
     outline: none; /* Remove focus outline */
     background-size: 12px 12px; /* Adjust this to fit your desired size */
-    margin-top: 0.2em;
-    margin-left: auto; /* This pushes the button to the far right */
+    margin-top: 0.5em;
     transition: background-color 250ms ease-in-out;
+    margin-right: 3em;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.taskItem:hover .taskRemove {
+    opacity: 1; 
+    visibility: visible;
 }

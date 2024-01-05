@@ -1,0 +1,19 @@
+.tasksContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.tasksBox {
+    width: 42.5em;
+    height: 55em;
+    background-color: var(--tasksBox-color);
+    margin-top: 2em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    color: var(--taskBox-text-color);
+    transition: background-color 250ms ease-in-out;
+    max-height: 55em;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
