@@ -3,7 +3,7 @@
     align-items: center;
     margin-top: 1em;
     margin-left: 1em;
-    width: 100%; /* Ensure taskItem takes full width of its container */
+    width: 100%; 
     height: 2em;
     justify-content: flex-start;
 }
@@ -20,9 +20,8 @@
     display: grid;
     place-content: center;
 
-    flex-shrink: 0; /* Prevents shrinking */
-    margin-right: 10px; /* Space between checkbox and label */
-
+    flex-shrink: 0;  
+    margin-right: 10px; 
 }
 
 .taskItem input::before {
