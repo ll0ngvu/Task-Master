@@ -23,4 +23,14 @@
         font-size: 2.7em;
         font-weight: 600;
     }
+
+    .Home {
+        overflow-y: hidden;
+    }
+}
+
+@mdia (min-width: 1024px) {
+    .Home {
+        overflow-y: hidden;
+    }
 }

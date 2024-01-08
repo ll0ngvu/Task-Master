@@ -32,6 +32,10 @@
   .inputContainer {
     margin-top: 3em;
   }
+
+  .inputBox {
+    width: 40.5em;
+  }
 }
 
 /* Desktop */
