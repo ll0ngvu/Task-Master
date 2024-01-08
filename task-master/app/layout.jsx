@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
         
         <link rel="icon" href="./public/logo.png" sizes="any" />
 
-        {/* Meta tags for Open Graph */}
       </Head>
 
       <body className={inter.className}>

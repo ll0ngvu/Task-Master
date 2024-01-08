@@ -10,8 +10,13 @@ import TaskBox from '@/app/components/taskBox'
 
 export default function Home() {
 
-  const [isDark, setIsDark] = useLocalStorage('isDark', false);
+  {/* Save user light/dark mode perference */}
+  const [isDark, setIsDark] = useLocalStorage('isDark', false); 
+
+  {/* Client-side rendering */}
   const [hasMounted, setHasMounted] = useState(false);
+
+  {/* Save user tasks perference */}
   const [tasks, setTasks] = useState([]);
 
   const toggleTaskCompleted = (description) => {

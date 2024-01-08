@@ -5,6 +5,8 @@ import React, { useState } from 'react';
 export default function InputBox({ onSubmitTask }) {
 
     const placeholderText = 'Add a task...';
+
+    {/* Clear input box when user clicks inside */}
     const [inputValue, setInputValue] = useState('');
 
     const handleFous = (e) => {
@@ -22,7 +24,7 @@ export default function InputBox({ onSubmitTask }) {
     const handleKeyPress = (e) => {
         if (e.key === 'Enter' && inputValue.trim() !== '') {
             onSubmitTask(inputValue);
-            setInputValue(''); // Clear the input box after submission
+            setInputValue(''); 
         }
     }
 

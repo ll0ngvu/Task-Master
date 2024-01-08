@@ -26,7 +26,10 @@ Task Master is a web-based to-do list application allowing users to manage their
 * NEXT.js
 <br/>
 * React
+<br />
+* Local Storage
 </div>
+
 
 ## Setup & Usage
 

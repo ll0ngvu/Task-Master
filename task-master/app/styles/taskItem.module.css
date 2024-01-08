@@ -19,9 +19,9 @@
     transform: translateY(0.3em);
     display: grid;
     place-content: center;
-
     flex-shrink: 0;  
     margin-right: 10px; 
+    cursor: pointer;
 }
 
 .taskItem input::before {
@@ -46,25 +46,25 @@
     margin-top: 0.4em;
     margin-left: 0.3em;
     font-size: 0.9rem;
-    flex-grow: 1; /* Allows the label to take up available space */
+    flex-grow: 1; 
     transition: opacity 0.5s ease;
-    white-space: normal; /* Allow text to wrap */
-    overflow-x: hidden; /* Hide horizontal overflow */
-    word-wrap: break-word; /* Break long words to prevent overflow */
+    white-space: normal; 
+    overflow-x: hidden; 
+    word-wrap: break-word; 
 }
 
 .taskRemove {
-    background-image: var(--remove-icon); /* Ensure this variable is defined with the correct icon path */
-    background-color: transparent; /* Remove any default background color */
-    background-size: contain; /* Adjust as needed */
+    background-image: var(--remove-icon); 
+    background-color: transparent; 
+    background-size: contain; 
     background-repeat: no-repeat;
     background-position: center;
-    width: 24px; /* Set a specific width */
-    height: 24px; /* Set a specific height */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Changes cursor on hover */
-    outline: none; /* Remove focus outline */
-    background-size: 12px 12px; /* Adjust this to fit your desired size */
+    width: 24px; 
+    height: 24px; 
+    border: none;
+    cursor: pointer; 
+    outline: none; 
+    background-size: 12px 12px; 
     margin-top: 0.5em;
     transition: background-color 250ms ease-in-out;
     margin-right: 3em;
