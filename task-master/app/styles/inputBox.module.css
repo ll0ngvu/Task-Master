@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3em;
+    margin-top: 2em;
   }
   
   .inputBox {
     border: none;
     background-color: var(--input-box-color);
-    width: 50em;
+    width: 23em;
     height: 4em;
     border-radius: 5px;
     padding-left: 1em;
@@ -25,3 +25,19 @@
   .inputBox::selection {
     background: lightgray;
   }
+
+
+  /* Tablet */
+@media (min-width: 768px) {
+  .inputContainer {
+    margin-top: 3em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .inputBox {
+    width: 50em;
+    height: 4em;
+  }
+}
