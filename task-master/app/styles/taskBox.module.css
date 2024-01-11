@@ -5,7 +5,7 @@
 
 .tasksBox {
     width: 20em;
-    height: 35em;
+    height: 25em;
     background-color: var(--tasksBox-color);
     margin-top: 2em;
     border-radius: 5px;
