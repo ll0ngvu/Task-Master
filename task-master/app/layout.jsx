@@ -19,10 +19,6 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
 
-        {/* Top Bar Colour for browsers in mobile devices */}
-        {/* <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-        <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" /> */}
-
         {/* Single theme-color meta tag to be updated dynamically */}
         <meta name="theme-color" content="#ffffff" />
 
