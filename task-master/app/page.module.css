@@ -10,10 +10,10 @@
 }
 
 .title h1 {
-    margin-top: 2em;
+    margin-top: 2.2em;
     color: var(--text-color);
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -30,6 +30,7 @@
     }
 }
 
+/* Desktop */
 @media (min-width: 1024px) {
     .Home {
         overflow-y: hidden;
