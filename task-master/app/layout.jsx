@@ -1,9 +1,7 @@
-'use client'
-
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
+import BrowserTheme from '@/app/components/browserTheme'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,25 +11,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-
-  const [isDark, setIsDark] = useState(false);
-
-  // Function to update the theme color meta tag
-  const updateThemeColor = () => {
-    const themeColor = isDark ? '#000000' : '#ffffff';
-    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColor);
-  };
-
-  // Effect to update the theme color whenever the theme state changes
-  useEffect(() => {
-    updateThemeColor();
-  }, [isDark]);
-
-  // Toggle theme (you can replace this with your actual theme toggle logic)
-  const toggleTheme = () => {
-    setIsDark(!isDark);
-  };
-
 
   return (
     <html lang="en">
