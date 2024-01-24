@@ -1,11 +1,13 @@
 .tasksContainer {
     display: flex;
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .tasksBox {
-    width: 20em;
-    height: 25em;
+    width: 75%;
+    height: 80vh;
     background-color: var(--tasksBox-color);
     margin-top: 2em;
     border-radius: 5px;
@@ -13,25 +15,30 @@
     flex-direction: column;
     color: var(--taskBox-text-color);
     transition: background-color 250ms ease-in-out;
-    max-height: 35em;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-/* Tablet */
-@media (min-width: 768px) {
+/* Tablet Portrait */
+@media (min-width: 768px) and (orientation: portrait) {
     .tasksBox {
-        width: 35em;
-        height: 45em;
-        max-height: 45em;
+        width: calc(75% - 2em); 
+        max-height: 70vh;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (orientation: landscape) {
+    .tasksBox {
+        width: calc(85% - 2em);
+        max-height: 80vh;
     }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
     .tasksBox {
-        width: 42.5em;
-        height: 55em;
-        max-height: 55em;
+        width: calc(33% - 4em);
+        max-height: 70vh;
     }
 }
