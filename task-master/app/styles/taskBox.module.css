@@ -2,12 +2,13 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
 }
 
 .tasksBox {
     width: 75%;
-    height: 80vh;
+    height: 60%;
     background-color: var(--tasksBox-color);
     margin-top: 2em;
     border-radius: 5px;
